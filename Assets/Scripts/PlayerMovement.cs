@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private NavMeshAgent agent;
 
     private RaycastHit[] Hits = new RaycastHit[1];
-    private void Start()
+    private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
     }
